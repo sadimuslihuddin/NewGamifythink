@@ -1,0 +1,301 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  
+    <title>Dashboard</title>
+  
+    
+    <!-- Custom styles for this template-->
+    <link href="sb-admin-2.min.css" rel="stylesheet">
+        
+    <!-- Custom fonts for this template-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,900&display=swap" rel="stylesheet">
+  
+    <link href="CSS/profil.css" rel="stylesheet">
+    <link href="CSS/dashboard.css" rel="stylesheet">
+    <script src="JS/Chart.js"></script>
+    
+    <!-- jQuery library & others -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <ul class="navbar-nav  sidebar sidebar-dark accordion" id="accordionSidebar">
+
+          <!-- Sidebar - Brand -->
+          <div class="sidebar-head d-flex align-items-center justify-content-center mt-2 mb-4">
+            <a class="sidebar-brand" href="index.html">
+              <div class="sidebar-brand-text ml-3"><img src="assets/logo.png" alt="logo"></div>
+              <div class="sidebar-brand-text-small mt-3 mb-4 disappear"><img src="assets/logo-small.png" alt="logo"></div>
+            </a>
+
+
+            <!-- Sidebar Toggler -->
+            <div id="sidebarToggle" class="sidebarToggleTop"><img src="assets/arrow-left.png" alt="arrow-left"></div>
+            <!-- end of sidebar Toggler -->
+          </div>
+
+          <!-- Avatar   -->
+          <div class="avatar">
+            <div class="avatar-picture mb-4 mx-auto">
+              <img src="assets/avatar.png" alt="">
+            </div>
+            <div class="avatar-data">
+              <p>Ilham Frima</p>
+              <p class="email">ilhamfrima@gmail.com</p>
+            </div>  
+          </div>
+          <!-- End of Avatar -->
+
+          <!-- Nav Item - Dashboard -->
+          <div id="sidebarToggle" class="sidebarToggleBottom mx-auto my-2 p-2 disappear"><img src="assets/right.png" alt="arrow-left"></div>
+
+          <li class="nav-item active">
+            <a class="nav-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" href="index.html">
+              <i class="fas fa-fw fa-columns"></i>
+              <span>Dashboard</span>
+            </a>
+            <div id="collapseTwo" class="collapse collapse1" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+              <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item border-dark border-bottom" href="dashboard.html"><i class="fas fa-signal mr-3"></i>Grafik</a>
+                <a class="collapse-item" href="ranking.html"><i class="fas fa-medal mr-3"></i>Ranking</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="profil.html">
+              <i class="fas fa-fw fa-user"></i>
+              <span>Profil</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link collapsed" href="index.html" data-toggle="collapse" data-target="#collapseUtilities"
+                aria-expanded="true" aria-controls="collapseUtilities">
+                <i class="fas fa-fw fa-calendar-check"></i>
+                <span>Event</span>
+            </a>
+            <div id="collapseUtilities" class="collapse collapse2" aria-labelledby="headingUtilities"
+                data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <a class="collapse-item border-dark border-bottom" href="sebelum test.html"><i class="far fa-clipboard mr-3"></i>Try Out</a>
+                    <a class="collapse-item" href="sebelum pembahasan.html"><i class="far fa-check-square mr-3"></i>Pembahasan</a>
+                </div>
+            </div>
+          </li>
+          
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">
+              <i class="fas fa-fw fa-file-alt"></i>
+              <span>Riwayat TO</span></a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">
+              <i class="fas fa-fw fa-mug-hot"></i>
+              <span>Cerita Kami</span></a>
+          </li>
+    
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">
+              <i class="fas fa-fw fa-sign-out-alt"></i>
+              <span>Log out</span></a>
+          </li>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content -->
+        <div class="content d-flex flex-column">
+          <ul class="nav justify-content-end mb-3 pr-5">
+            <li class="nav-item my-2 mx-2">
+              <p class="date pt-3">Senin, 24 Agustus 2020</p>
+            </li>
+            <li class="nav-item dropdown no-arrow my-2 mx-2 ">
+              <a class="nav-link dropdown-toggle pt-3 pb-0" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="far fa-bell fa-fw"></i>
+              </a>
+            </li>
+            <li class="pilih-to  my-2 mx-2 ">
+              <a class="nav-link btn pt-3 pb-3" href="index.html">
+                PILIH TRY OUT
+              </a>
+            </li>
+          </ul>
+          <div class="dashboard ml-sm-5 mt-4">
+            <h2 class="title font-weight-bold mb-5">Dashboard</h2>
+            <div class="row">
+              <div class="col-sm-9">
+                <div class="greeting d-flex mb-5 pl-5 pr-5 py-4 justify-content-between">
+                  <div class="text">
+                    <h4 class="text-top mb-3">
+                      Selamat datang, Ilham Frima
+                    </h4>
+                    <br>
+                    <p class="text-bottom">
+                      Persiapkan dirimu dan kerjakan Try out online untuk mengukur kemampuanmu
+                    </p>
+                  </div>
+                  <div class="image">
+                    <img src="assets/hero.png" alt="">
+                  </div>
+                </div>
+                
+                <div class="results">
+                  <p class="title">Lastest Result :</p>
+                  <div class="buttons d-inline-flex mb-4">
+                    <div id="pu" class="btn mr-3">
+                      PU
+                    </div>
+                    <div id="pk" class="btn mr-3">
+                      PK
+                    </div>
+                    <div id="pbdm" class="btn mr-3">
+                      PDBM
+                    </div>
+                    <div id="pdpu" class="btn mr-3">
+                      PDPU
+                    </div>
+                  </div>
+                  <div class="chart mb-5">
+                    <h4 class="chartTitle mb-4">
+                      Penalaran Umum
+                    </h4>
+                    <canvas id="myChart"></canvas>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-sm-3">
+                <div class="strength p-3">
+                  <p class="strength-title">
+                    Your Strength
+                  </p>
+                  <div class="strength-chart">
+                    <canvas id="myStrength"></canvas>
+                  </div>
+                  <div class="note d-flex">
+                    <div class="note-pic mt-1 mr-2"></div>
+                    <p class="mt-1">Rata-rata</p>
+                  </div>
+                </div>
+                <div class="tips mt-5 px-4 py-2">
+                  <p class="tips-title">
+                    Tips :
+                  </p>
+                  <p class="tips-content">
+                    Atur strategi untuk meningkatkan kemampuan mu dan terus lanjut ke level berikutnya!
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+        <!-- End of Content -->
+      </div>
+      <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var str = document.getElementById('myStrength').getContext('2d');
+        var chartLine = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
+            // The data for our dataset
+            data: {
+                labels: ['','TO1', 'TO2', 'TO3', 'TO4'],
+                datasets: [{
+                    label: 'My First dataset',
+                    fill : false,
+                    borderColor: '#FE6534',
+                    data: [null, 60, 70, 80,70,90,100],
+                }]
+            },
+
+            // Configuration options go here
+            options: {
+                legend:{
+                    display:false,
+                },
+                bezierCurve:true,
+                scales:{
+                    yAxes:[{
+                        ticks:{
+                            fontColor:'#AFAFAF',
+                            fontFamily:'Poppins',
+                            stepSize:10
+                        },
+                        // gridLines:{
+                        //     display:false
+                        // }
+                    }],
+                    xAxes:[{
+                        ticks:{
+                            fontColor:'#AFAFAF',
+                            fontFamily:'Poppins',
+                        },
+                        gridLines:{
+                            display:false
+                        }
+                    }]
+                }
+            }
+        });
+        var chartRadar = new Chart(str, {
+            // The type of chart we want to create
+            type: 'radar',
+            // The data for our dataset
+            data: {
+                labels: ['PDPU', 'PK', 'PDBM', 'PU'],
+                datasets: [{
+                    label: 'My First dataset',
+                    fill : true,
+                    backgroundColor :'rgba(254, 101, 52, 0.3)',
+                    borderColor: '#FE6534',
+                    data: [60,80,70,70],
+                }]
+            },
+
+            options:{
+              legend:{
+                    display:false,
+                },
+              maintainAspectRatio: false,
+              scale:{
+                    ticks:{
+                      display:false
+                    },
+                    fontFamily:'Poppins',
+                }
+            }
+        });
+    </script>
+    
+      <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="JS/sb-admin-2.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="JS/demo/chart-area-demo.js"></script>
+    <script src="JS/demo/chart-pie-demo.js"></script>
+  </body>
+</html>
