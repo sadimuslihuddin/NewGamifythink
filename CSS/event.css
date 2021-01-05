@@ -72,13 +72,17 @@ li{
     height: 50px;
     width: 50px;
     color: inherit;
+    color: #cecece;
     background: White;
+    font-size: 1.5rem;
+    border: 1px solid White;
     border-radius: 100%;
     z-index: 100;
+    transition: ease-in .2s;
   }
-.owl-theme .custom-nav .owl-prev i,.owl-theme .custom-nav .owl-next i{
+.owl-theme .custom-nav .owl-prev:hover,.owl-theme .custom-nav .owl-next:hover{
     font-size: 1.5rem;
-    color: #cecece;
+    color: #202020;
   }
 .owl-theme .custom-nav .owl-prev{
     left: -20px;
