@@ -298,7 +298,7 @@ nav + .scroll{
         background-color: transparent;
     }
     .nav-link{
-        color: white;
+        color: rgb(255, 255, 255) !important;
     }
     #nav-btn{
         font-family: 'Poppins', sans-serif;
@@ -318,8 +318,8 @@ nav + .scroll{
         height: 2px;
         left: 50%;
         position: absolute;
-        background: #fff;
-        background: var(--nav-link-line, #fff);
+        background: #fff !important;
+        background: var(--nav-link-line, #fff) !important;
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
       }
@@ -327,6 +327,17 @@ nav + .scroll{
         width: 100%; 
         left: 0; 
       }
+    .joystick-img{
+        width: 100%;
+    }
+    .joystick-title{
+        font-size: 18px;
+        line-height: normal !important;
+    }
+    .joystick-button{
+        font-size: 14px;
+        padding: 14px 48px;
+    }
     .box-atas{
         display: none;
     }
@@ -337,6 +348,7 @@ nav + .scroll{
     .box-title{
         font-size: 1.75rem;
         line-height: 40px;
+        margin-top: 0;
     }
     .box-para{
         font-size: 1rem;
@@ -349,6 +361,7 @@ nav + .scroll{
     .box-tengah div .btn-lg{
         padding-left: 2rem;
         padding-right: 2rem;
+        font-size: 1rem;
     }
     .box-img{
         width: 175px;
@@ -364,6 +377,13 @@ nav + .scroll{
     }
     .category{
         margin: 0;
+    }
+    .btn-more{
+        background-color: transparent;
+        font-size: 1rem;
+        padding: 1rem;
+        color: #FE6534;
+        border: 1px solid #FE6534;
     }
     .modal{
         left: 5%;
@@ -393,5 +413,16 @@ nav + .scroll{
     }
     .modal-footer .btn-lg:hover{
         border: 1px solid #FE6534;
+    }
+    .footer-title{
+        font-size: 16px;
+    }
+    .footer-list{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .footer-img{
+        width:90%;
+        height: auto;
     }
 }
