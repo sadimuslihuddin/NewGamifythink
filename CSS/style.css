@@ -1,0 +1,428 @@
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+  z-index: 1;
+}
+
+*::-webkit-scrollbar-track {
+  background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #C4C4C4;
+  border-radius: 20px;
+  border: 3px solid #F6F6F6;
+}
+
+*::-webkit-resizer{
+   display: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5F3EF;
+    ;
+}
+.container, .container-lg, .container-md, .container-sm, .container-xl{
+    max-width: 1250px;
+}
+nav > .nav-link + .scroll{
+    color: #fff
+}
+nav + .scroll{
+    background-color: #1C4F94;
+}
+.nav-link{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+.navbar-nav { 
+    margin: 150px auto 0; 
+    padding: 0; 
+    list-style: none; 
+  }
+.nav-item {
+    position: relative;
+}
+
+.nav-link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    background: var(--nav-link-line, #000);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.nav-link:hover:after {
+    width: 100%;
+    left: 0;
+  }
+
+.carousel-item img{
+    border-radius: 10px;
+    margin-top: 5rem;
+}
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.carousel-control-next, .carousel-control-prev{
+    top:50px;
+    width:10%;
+}
+.box-atas{
+    background-color: #F5F3EF;
+    width: 100%;
+    height: 100px;
+    border-radius: 0px 0px 100px 0px;
+}
+.box-kanan{
+    background-color: #F5F3EF;
+    position: absolute;
+    right: 0px;
+    height: auto;
+    width: 100px;
+}
+.box-tengah{
+    background-color: #1C4F94;
+    border-radius: 30px 0px 0px 30px;
+    color: #fff;
+}
+.box-bawah{
+    background-color: #F5F3EF;
+    width: 100%;
+    height: 100px;
+    border-radius: 0px 100px 0px 0px;
+
+}
+.box-title{
+    width: 360px;
+    font-size: 2.5rem;
+    line-height: 60px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    margin-top: 2.5rem;
+
+}
+.box-para{
+    width: 460px;
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin-bottom: 2.5rem;
+}
+.box-img{
+    position: relative;
+    height: 600px;
+    bottom:0px;
+    left: 650px;
+    margin-top: -500px;
+}
+.category-img{
+    position: relative;
+    width: 500px;
+    top : 300px;
+    left: -100px;
+    margin-top: -400px;
+    z-index: -1;
+
+}
+.card-section-title{
+    text-align: center;
+}
+.card-category{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+.category{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #828282;
+    padding: 9px 10px;
+    margin: 1rem;
+    width: fit-content;
+}
+.category:hover{
+    text-decoration: none;
+    color: #828282;
+}
+.category-active{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #FE6534 ;
+    border-radius: 50px;
+    padding: 9px 25px;
+}
+.category-active:hover{
+    text-decoration: none;
+    color: #0B6E8E;
+}
+.card{
+    border-radius: 15px;
+}
+.card-img-top{
+    border-radius: 15px 15px 0px 0px;
+}
+.card-body{
+    padding: 10px;
+    background-color: #202020;
+    border-radius: 0px 0px 15px 15px;
+}
+.card-title{
+    margin: 10px 0;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+}
+.card-img-top{
+    max-height: 200px;
+    max-width: 100%;
+}
+.modal{
+    border-radius:10px;
+}
+.modal-header{
+    padding: 0px;
+}
+.img-modal{
+    width: 100%;
+}
+.close{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #fff;
+}
+.modal-body-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 42px;
+}
+.modal-body-para{
+    font-size: 16px;
+    line-height: 30px;
+}
+.modal-footer{
+    border: 0px;
+}
+.footer-title{
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;;
+}
+.footer-list{
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: block;
+    text-decoration: none;
+}
+.footer-list:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-oa{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.btn{
+    padding: 10px 28px;
+}
+.btn-lg{
+    padding: 1rem 3.5rem;
+}
+.btn-primary{
+    color: #ffffff ;
+    background-color: #FE6534 ;
+    border-radius: 5px;
+    border: none;
+}
+.btn-secondary{
+    color: #0B6E8E;
+    background-color: #56CCF2;
+    border-radius: 5px;
+    border: none;
+}
+.btn-secondary:hover{
+    text-decoration: none;
+
+}
+.btn-primary:hover{
+    text-decoration: none;
+    background-color: #fff;
+    color: #FE6534;
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+
+
+@media only screen and (max-width : 900px){
+    .navbar{
+        padding: 0;
+    }
+    .navbar-nav{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .navbar-nav .nav-item{
+        text-align: center;
+        padding: 5px;
+    }
+    .navbar-nav .nav-item::marker{
+        padding: 0;
+        margin: 0;
+    }
+    .navbar-nav .nav-item .nav-link{
+        color: white;
+    }
+    .navbar-nav .nav-item a{
+        color: white;
+        background-color: transparent;
+    }
+    .nav-link{
+        color: rgb(255, 255, 255) !important;
+    }
+    #nav-btn{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        color: white;
+        padding: 0;
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+    }
+    #nav-btn:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff !important;
+        background: var(--nav-link-line, #fff) !important;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+    #nav-btn:hover:after {
+        width: 100%;
+        left: 0;
+      }
+    .joystick-img{
+        width: 100%;
+    }
+    .joystick-title{
+        font-size: 18px;
+        line-height: normal !important;
+    }
+    .joystick-button{
+        font-size: 14px;
+        padding: 14px 48px;
+    }
+    .box-atas{
+        display: none;
+    }
+    .box-tengah{
+        margin: 0 !important;
+        border-radius: 0;
+    }
+    .box-title{
+        font-size: 1.75rem;
+        line-height: 40px;
+        margin-top: 0;
+    }
+    .box-para{
+        font-size: 1rem;
+        font-weight: 300;
+        width: 275px;
+    }
+    .box-bawah{
+        display: none;
+    }
+    .box-tengah div .btn-lg{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1rem;
+    }
+    .box-img{
+        width: 175px;
+        height: auto;
+        left: 225px;
+        margin-top: -130px;
+    }
+    .category-img{
+        display: none;
+    }
+    .card-category{
+        margin : 2.5rem 0 0 0;
+    }
+    .category{
+        margin: 0;
+    }
+    .btn-more{
+        background-color: transparent;
+        font-size: 1rem;
+        padding: 1rem;
+        color: #FE6534;
+        border: 1px solid #FE6534;
+    }
+    .modal{
+        left: 5%;
+        top: 15%;
+        width: 90%;
+        height:70%;
+    }
+    .modal-body-title{
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .modal-body-para{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .modal-body ul{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .modal-footer .btn-lg{
+        font-size: 14px;
+        padding: .5rem 1rem;
+    }
+    .modal-footer .btn-lg{
+        font-size: 14px;
+        padding: .5rem 1rem;
+    }
+    .modal-footer .btn-lg:hover{
+        border: 1px solid #FE6534;
+    }
+    .footer-title{
+        font-size: 16px;
+    }
+    .footer-list{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .footer-img{
+        width:90%;
+        height: auto;
+    }
+}

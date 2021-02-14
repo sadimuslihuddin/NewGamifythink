@@ -1,0 +1,206 @@
+.dashboard .title{
+    color: #202020;
+}
+
+.dashboard .greeting{
+    width: 90%;
+    color: #FFFFFF;
+    background-color: #1C4F94;
+    border-radius: 10px;
+}
+
+.dashboard .greeting .text{
+    width: 70%;
+    min-width: 150px;
+}
+
+.dashboard .greeting .text .text-top{
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.dashboard .greeting .text .text-bottom{
+    font-size: 16px;
+}
+
+
+.dashboard .results .title{
+    font-weight: 500;
+    font-size: 16px;
+}
+.dashboard .greeting .image{
+    margin-top: -70px;
+}
+
+.dashboard .results{
+    width: 90%;
+}
+
+.dashboard .results .buttons .btn{
+    font-size: 12px;
+    width: 60px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    font-weight: 500;
+    color: #D3D3D3;
+    font-style: italic;
+}
+
+.dashboard .results .buttons .btn:hover{
+    color: #FFFFFF;
+    background-color: #FE6534;
+}
+
+.dashboard .results .chart{
+    padding: 40px 30px 10px 30px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard .results .chartTitle{
+    font-weight: 600;
+    color: #FE6534;
+}
+
+.dashboard .strength{
+    width: 200px;
+    height: 270px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    
+}
+
+.dashboard .strength .strength-title{
+    font-size: 12px;
+    color: #3C75A0;
+    font-weight: 500;
+}
+
+.dashboard .strength .strength-chart{
+    width: 100%;
+    height: 150px;
+}
+
+.dashboard .tips{
+    width: 200px;
+    height: 180px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.dashboard .tips .tips-title{
+    color: #3C75A0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.dashboard .tips .tips-content{
+    color: #FE6534;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.dashboard .strength .note .note-pic{
+    background: #F1C3B6;
+    border: 1px solid #FE6534;
+    width: 30px;
+    height: 15px;
+    border-radius: 5px;
+}
+
+.dashboard .strength .note p{
+    font-size: 12px;
+     color: black;
+}
+
+.row{
+    width: 100%;
+}
+
+@media only screen and (max-width:575px){
+    .dashboard{
+        margin-left: 16px;
+    }
+    .dashboard .title{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 20px!important;
+    }
+    .dashboard .text-top{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px!important;
+        margin-bottom: 8px!important;
+    }
+    .dashboard .text-bottom{
+        font-size: 10px!important;
+        line-height: 15px;
+        margin-bottom: 0!important;
+    }
+    .dashboard .greeting{
+        padding: 17px 12px!important;
+        width: 100%;
+        margin-bottom: 32px!important;
+    }
+    .results{
+        width: 100%!important;
+    }
+    .strength{
+        width: 50%!important;
+        height: auto!important;
+        margin-right: 10px!important;
+        margin-bottom: 20px;
+    }
+    .tips{
+        width: 50%!important;
+        height: auto!important;
+        margin-bottom: 20px;
+        margin-top: 0px!important;
+    }
+    .col-sm-3{
+        display: flex;
+        max-width: 100%!important;
+    }
+    .justify-content-between{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .col-sm-9{
+        max-width: 100%!important;
+    }
+    .col-sm-3{
+        display: flex;
+        margin-bottom: 70px;
+        max-width: 90%;
+    }
+    .strength, .tips{
+        width: 48%!important;
+    }
+    .tips{
+        height: 270px!important;
+        margin-top: 0!important;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width:969px){
+    .greeting .image{
+        display: none!important;
+    }
+    .text{
+        width: 100%!important;
+    }
+}
+
+@media only screen and (max-width:1063px){
+    .greeting .image{
+        margin-top: 0!important;
+    }
+}
